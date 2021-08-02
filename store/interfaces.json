@@ -1,0 +1,23 @@
+{
+  "disposition-layout": {
+    "component": "index",
+    "composition": "children",
+    "content": {
+      "properties": {
+        "order": {
+          "type": "array",
+          "title": "admin/editor.dispositionlayout.order.title",
+          "description": "admin/editor.dispositionlayout.order.description",
+          "canAdd": false,
+          "items": {
+            "title": "admin/editor.dispositionlayout.order.items.title",
+            "description": "admin/editor.dispositionlayout.order.items.description",
+            "type": "number",
+            "readonly": true,
+            "default": ""
+          }
+        }
+      }
+    }
+  }
+}

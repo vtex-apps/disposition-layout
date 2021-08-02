@@ -1,0 +1,8 @@
+{
+  "admin/editor.dispositionlayout.title": "Disposition Layout",
+  "admin/editor.dispositionlayout.description": "Ordena secciones/bloques/componentes arrastrandolos en la interfaz",
+  "admin/editor.dispositionlayout.order.title": "Orden de los componentes",
+  "admin/editor.dispositionlayout.order.description": "Este es el orden en cual los componentes se mostraran. Puedes organizarlos arrastrandolos. NO AÑADAS UNO NUEVO, esta accion no provocara resultados",
+  "admin/editor.dispositionlayout.order.items.title": "ID del componente",
+  "admin/editor.dispositionlayout.order.items.description": "Este numero corresponde al componente de la lista. Si esta vacio, lo puedes eliminar."
+}

@@ -1,0 +1,8 @@
+{
+  "admin/editor.dispositionlayout.title": "Title of the component",
+  "admin/editor.dispositionlayout.description": "Description of the component",
+  "admin/editor.dispositionlayout.order.title": "Title of the order array prop",
+  "admin/editor.dispositionlayout.order.description": "Description of the order array prop",
+  "admin/editor.dispositionlayout.order.items.title": "Title of the order item",
+  "admin/editor.dispositionlayout.order.items.description": "Description of the order item"
+}
