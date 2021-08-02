@@ -14,6 +14,8 @@ A layout capable of ordering sections/blocks/components by **dragging** them on 
 
 ✅ SEO-FRIENDLY
 
+![ordering-example](https://user-images.githubusercontent.com/50715158/127877940-c908b262-2fe8-459f-977b-ef6526f697a3.gif)
+
 ## Configuration
 
 1. Add `vtex.disposition-layout` as a theme dependency in the `manifest.json` file
@@ -34,7 +36,7 @@ A layout capable of ordering sections/blocks/components by **dragging** them on 
 
 ## Modus Operandi
 
-The best application is to declare the array length and numerical values corresponding to the length and order of the children array.
+A good implementantion is to declare the array length and numerical values corresponding to the length and order of the children array.  
 
 ⚠️ Always use an ascending pattern starting from 1, as this array is correlated with the indices of the children
 
