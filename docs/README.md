@@ -26,7 +26,7 @@ A layout capable of ordering sections/blocks/components by **dragging** them on 
 
 | Prop name | Type    | Description                                                      | Default value |
 | --------- | ------- | ---------------------------------------------------------------- | ------------- |
-| `order`   | `array` | An array of integers describing the numerical asigment and order | `undefined`   |
+| `order`   | `array` | An array of integers describing the numerical assigment and order | `undefined`   |
 
 - `order` array:
 
@@ -52,6 +52,11 @@ A good implementantion is to declare the array length and numerical values corre
     }
   },
 ```
+
+Per example,  
+- 1 -> "flex-layout.row#one"
+- 2 -> "info-card#example"
+- 3 -> "flex-layout.row#two"
 
 ## Customization
 
