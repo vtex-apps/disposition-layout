@@ -1,16 +1,21 @@
 import React from 'react'
 
+type Disposition = {
+  order: number
+  show: boolean
+}
+
 const DispositionLayout: StorefrontComponent = ({
   children,
-  order,
+  disposition,
 }: {
   children: React.ComponentType
-  order: number[]
+  disposition: Disposition[]
 }) => {
   const array = React.Children.toArray(children)
-  const sortedChildren = order
-    .filter((item) => item)
-    .map((index) => array[index - 1])
+  const sortedChildren = disposition
+    .filter(({ order, show }) => order && show)
+    .map(({ order }) => array[order - 1])
 
   return sortedChildren
 }

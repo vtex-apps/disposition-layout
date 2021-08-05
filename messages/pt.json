@@ -1,8 +1,10 @@
 {
   "admin/editor.dispositionlayout.title": "Disposition Layout",
   "admin/editor.dispositionlayout.description": "Classifique seções/blocos/componentes arrastando-os na interface",
-  "admin/editor.dispositionlayout.order.title": "Ordem de componentes",
-  "admin/editor.dispositionlayout.order.description": "Esta é a ordem em que os componentes serão exibidos. Você pode organizá-los arrastando-os. NÃO ADICIONE UM NOVO, esta ação não causará resultados",
+  "admin/editor.dispositionlayout.disposition.title": "Ordem de componentes",
+  "admin/editor.dispositionlayout.disposition.description": "Esta é a ordem em que os componentes serão exibidos. Você pode organizá-los arrastando-os. NÃO ADICIONE UM NOVO, esta ação não causará resultados",
   "admin/editor.dispositionlayout.order.items.title": "ID de componente",
-  "admin/editor.dispositionlayout.order.items.description": "Este número corresponde ao componente da lista. Se estiver vazio, você pode excluí-lo"
+  "admin/editor.dispositionlayout.order.items.description": "Este número corresponde ao componente da lista. Se estiver vazio, você pode excluí-lo",
+  "admin/editor.dispositionlayout.show.items.title": "Visibilidade",
+  "admin/editor.dispositionlayout.show.items.description": "Controla se este componente é mostrado ou escondido"
 }

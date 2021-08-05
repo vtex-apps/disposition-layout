@@ -10,7 +10,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
-A layout capable of ordering sections/blocks/components by **dragging** them on the site editor's interface.
+A layout capable of ordering sections/blocks/components by **dragging** them on the site editor's interface, and choosing which of them are visible.
 
 ✅ SEO-FRIENDLY
 
@@ -20,23 +20,24 @@ A layout capable of ordering sections/blocks/components by **dragging** them on 
 
 1. Add `vtex.disposition-layout` as a theme dependency in the `manifest.json` file
 2. Declare your orderable components as children of `disposition-layout`
-3. Add, as prop, an array with the numerical assigment of the given components; always start from `1`
+3. Add, as prop, an array of objects with the numerical assigment of the given components; always start from `1`
+4. Controlling the visibility is done via site editor, inside each item of the array list
 
 ### `disposition-layout` props
 
-| Prop name | Type    | Description                                                      | Default value |
-| --------- | ------- | ---------------------------------------------------------------- | ------------- |
-| `order`   | `array` | An array of integers describing the numerical assigment and order | `undefined`   |
+| Prop name     | Type    | Description                                                                     | Default value |
+| ------------- | ------- | ------------------------------------------------------------------------------- | ------------- |
+| `disposition` | `array` | An array of objects describing, with integers, the numerical asigment and order | `undefined`   |
 
-- `order` array:
+- `disposition` array:
 
-| Type     | Description                              | Default value |
-| -------- | ---------------------------------------- | ------------- |
-| `number` | The numerical assigment of the component | `undefined`   |
+| Prop name | Type     | Description                               | Default value |
+| --------- | -------- | ----------------------------------------- | ------------- |
+| `order`   | `number` | The numerical assigment for each children | `undefined`   |
 
 ## Modus Operandi
 
-A good implementantion is to declare the array length and numerical values corresponding to the length and order of the children array.  
+A good implementantion is to declare the array length and numerical values corresponding to the length and order of the children array.
 
 ⚠️ Always use an ascending pattern starting from 1, as this array is correlated with the indices of the children
 
@@ -48,12 +49,23 @@ A good implementantion is to declare the array length and numerical values corre
       "flex-layout.row#two"
     ],
     "props": {
-      "order": [1,2,3]
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
     }
   },
 ```
 
-Per example,  
+Per example,
+
 - 1 -> "flex-layout.row#one"
 - 2 -> "info-card#example"
 - 3 -> "flex-layout.row#two"

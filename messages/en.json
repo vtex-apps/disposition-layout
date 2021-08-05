@@ -1,8 +1,10 @@
 {
   "admin/editor.dispositionlayout.title": "Disposition Layout",
   "admin/editor.dispositionlayout.description": "Order sections/blocks/components by dragging them on the interface",
-  "admin/editor.dispositionlayout.order.title": "Components Order",
-  "admin/editor.dispositionlayout.order.description": "This is the order on which the components are displayed. You can order them by dragging them. DON'T ADD A NEW ONE, this action won't produce a result",
+  "admin/editor.dispositionlayout.disposition.title": "Components Order",
+  "admin/editor.dispositionlayout.disposition.description": "This is the order on which the components are displayed. You can order them by dragging them. DON'T ADD A NEW ONE, this action won't produce a result",
   "admin/editor.dispositionlayout.order.items.title": "Component ID",
-  "admin/editor.dispositionlayout.order.items.description": "This number corresponds to a component on the list. If empty, you can delete it."
+  "admin/editor.dispositionlayout.order.items.description": "This number corresponds to a component on the list. If empty, you can delete it.",
+  "admin/editor.dispositionlayout.show.items.title": "Visibility",
+  "admin/editor.dispositionlayout.show.items.description": "Controls if this component is shown or hidden"
 }

@@ -7,7 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Prop to handle the visibility of components
+
 ## [0.0.1] - 2021-08-02
 
 ### Added
+
 - Initial release.
