@@ -14,7 +14,7 @@ A layout capable of ordering sections/blocks/components by **dragging** them on 
 
 ✅ SEO-FRIENDLY
 
-![ordering-example](https://user-images.githubusercontent.com/50715158/127877940-c908b262-2fe8-459f-977b-ef6526f697a3.gif)
+![ordering-example](https://user-images.githubusercontent.com/50715158/128493726-ebdbca35-292e-4bd3-84a1-ac01005843ec.gif)
 
 ## Configuration
 
@@ -69,6 +69,10 @@ Per example,
 - 1 -> "flex-layout.row#one"
 - 2 -> "info-card#example"
 - 3 -> "flex-layout.row#two"
+
+If by mistake you delete an item from the list, in site editor, remember that you can go to `configuration` and restore the original theme settings. 
+
+![configuration](https://user-images.githubusercontent.com/50715158/128494098-6d5dff5d-c909-48a7-84de-d1578544cf93.png)
 
 ## Customization
 
