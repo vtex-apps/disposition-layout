@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "disposition-layout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "VTEX Disposition Layout",
   "description": "A storefront-ready block that encompasses other blocks, used to organize components by ordering them in the site editor",
   "builders": {
