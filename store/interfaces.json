@@ -19,11 +19,23 @@
                 "readonly": true,
                 "default": ""
               },
-              "show": {
-                "title": "admin/editor.dispositionlayout.show.items.title",
-                "description": "admin/editor.dispositionlayout.show.items.description",
+              "desktop": {
+                "title": "admin/editor.dispositionlayout.desktop.items.title",
+                "description": "admin/editor.dispositionlayout.desktop.items.description",
                 "type": "boolean",
                 "default": true
+              },
+              "tablet": {
+                "title": "admin/editor.dispositionlayout.tablet.items.title",
+                "description": "admin/editor.dispositionlayout.tablet.items.description",
+                "type": "boolean",
+                "default": false
+              },
+              "mobile": {
+                "title": "admin/editor.dispositionlayout.mobile.items.title",
+                "description": "admin/editor.dispositionlayout.mobile.items.description",
+                "type": "boolean",
+                "default": false
               }
             }
           }

@@ -1,8 +1,11 @@
 import React from 'react'
+import { useRuntime } from 'vtex.render-runtime'
 
 type Disposition = {
   order: number
-  show: boolean
+  desktop: boolean
+  tablet: boolean
+  mobile: boolean
 }
 
 const DispositionLayout: StorefrontComponent = ({
@@ -12,10 +15,49 @@ const DispositionLayout: StorefrontComponent = ({
   children: React.ComponentType
   disposition: Disposition[]
 }) => {
+  const { deviceInfo } = useRuntime()
   const array = React.Children.toArray(children)
-  const sortedChildren = disposition?.filter(({ order, show }) => order && show).map(({ order }) => array[order - 1]) ?? children
 
-  return sortedChildren
+  if (deviceInfo.type === 'desktop') {
+    const sortedChildrenDesktop =
+      disposition
+        ?.filter(({ order, desktop }) => order && desktop)
+        .map(({ order }) => array[order - 1]) ?? children
+
+    return sortedChildrenDesktop
+  }
+
+  if (deviceInfo.type === 'tablet') {
+    const sortedChildrenTablet =
+      disposition
+        ?.filter(({ order, tablet }) => order && tablet)
+        .map(({ order, tablet }) => {
+          if (tablet === deviceInfo.isMobile && deviceInfo.type === 'tablet') {
+            return array[order - 1]
+          }
+
+          return []
+        }) ?? children
+
+    return sortedChildrenTablet
+  }
+
+  if (deviceInfo.type === 'phone') {
+    const sortedChildrenMobile =
+      disposition
+        ?.filter(({ order, mobile }) => order && mobile)
+        .map(({ order, mobile }) => {
+          if (mobile === deviceInfo.isMobile && deviceInfo.type === 'phone') {
+            return array[order - 1]
+          }
+
+          return []
+        }) ?? children
+
+    return sortedChildrenMobile
+  }
+
+  return []
 }
 
 DispositionLayout.schema = {

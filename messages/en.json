@@ -5,6 +5,10 @@
   "admin/editor.dispositionlayout.disposition.description": "This is the order on which the components are displayed. You can order them by dragging them. DON'T ADD A NEW ONE, this action won't produce a result",
   "admin/editor.dispositionlayout.order.items.title": "Component ID",
   "admin/editor.dispositionlayout.order.items.description": "This number corresponds to a component on the list. If empty, you can delete it.",
-  "admin/editor.dispositionlayout.show.items.title": "Visibility",
-  "admin/editor.dispositionlayout.show.items.description": "Controls if this component is shown or hidden"
+  "admin/editor.dispositionlayout.desktop.items.title": "Desktop",
+  "admin/editor.dispositionlayout.desktop.items.description": "Controls if this component is shown or hidden",
+  "admin/editor.dispositionlayout.tablet.items.title": "Tablet",
+  "admin/editor.dispositionlayout.tablet.items.description": "Controls if this component is shown or hidden",
+  "admin/editor.dispositionlayout.mobile.items.title": "Mobile",
+  "admin/editor.dispositionlayout.mobile.items.description": "Controls if this component is shown or hidden"
 }

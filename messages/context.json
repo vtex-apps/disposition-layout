@@ -5,6 +5,10 @@
   "admin/editor.dispositionlayout.disposition.description": "Description of the disposition array list",
   "admin/editor.dispositionlayout.order.items.title": "Title of the order prop",
   "admin/editor.dispositionlayout.order.items.description": "Description of the order prop",
-  "admin/editor.dispositionlayout.show.items.title": "Title of the show prop",
-  "admin/editor.dispositionlayout.show.items.description": "Description of the show prop"
+  "admin/editor.dispositionlayout.desktop.items.title": "Title of the desktop prop",
+  "admin/editor.dispositionlayout.desktop.items.description": "Description of the desktop prop",
+  "admin/editor.dispositionlayout.tablet.items.title": "Title of the tablet prop",
+  "admin/editor.dispositionlayout.tablet.items.description": "Description of the tablet prop",
+  "admin/editor.dispositionlayout.mobile.items.title": "Title of the mobile prop",
+  "admin/editor.dispositionlayout.mobile.items.description": "Description of the mobile prop"
 }

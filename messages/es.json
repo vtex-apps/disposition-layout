@@ -5,6 +5,10 @@
   "admin/editor.dispositionlayout.disposition.description": "Este es el orden en cual los componentes se mostraran. Puedes organizarlos arrastrandolos. NO AÑADAS UNO NUEVO, esta accion no provocara resultados",
   "admin/editor.dispositionlayout.order.items.title": "ID del componente",
   "admin/editor.dispositionlayout.order.items.description": "Este numero corresponde al componente de la lista. Si esta vacio, lo puedes eliminar.",
-  "admin/editor.dispositionlayout.show.items.title": "Visibilidad",
-  "admin/editor.dispositionlayout.show.items.description": "Controla si este componente se muestra u oculta"
+  "admin/editor.dispositionlayout.desktop.items.title": "Escritorio",
+  "admin/editor.dispositionlayout.desktop.items.description": "Controla si este componente se muestra u oculta",
+  "admin/editor.dispositionlayout.tablet.items.title": "Tableta",
+  "admin/editor.dispositionlayout.tablet.items.description": "Controla si este componente se muestra u oculta",
+  "admin/editor.dispositionlayout.mobile.items.title": "Movil",
+  "admin/editor.dispositionlayout.mobile.items.description": "Controla si este componente se muestra u oculta"
 }
