@@ -21,7 +21,7 @@ A layout capable of ordering sections/blocks/components by **dragging** them on 
 1. Add `vtex.disposition-layout` 1.x as a theme dependency in the `manifest.json` file
 2. Declare your orderable components as children of `disposition-layout`
 3. Add, as prop, an array of objects with the numerical assigment of the given components; always start from `1`
-4. Controlling the visibility is done via site editor, inside each item of the array list
+4. Controlling the visibility in desktop, mobile, and tablet via site editor, inside each item of the array list
 
 ### `disposition-layout` props
 
