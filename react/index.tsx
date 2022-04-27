@@ -9,11 +9,17 @@ const DispositionLayout: StorefrontComponent = ({
   children,
   disposition,
 }: {
-  children: React.ComponentType
+  children: any
   disposition: Disposition[]
 }) => {
-  const array = React.Children.toArray(children)
-  const sortedChildren = disposition?.filter(({ order, show }) => order && show).map(({ order }) => array[order - 1]) ?? children
+  const array = React.Children.toArray(children) as any
+  let sortedChildren;
+  if (array.length==1) {// LIVE
+    sortedChildren = disposition?.filter(({ order, show }) => order && show).map(({ order }) => array[0].props.children[order - 1]) ?? children  
+  }
+  else{ //CMS
+    sortedChildren = disposition?.filter(({ order, show }) => order && show).map(({ order }) => array[order - 1]) ?? children  
+  }
 
   return sortedChildren
 }
