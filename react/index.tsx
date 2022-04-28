@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 type Disposition = {
   order: number
@@ -9,17 +9,19 @@ const DispositionLayout: StorefrontComponent = ({
   children,
   disposition,
 }: {
-  children: any
+  children: React.ComponentType
   disposition: Disposition[]
 }) => {
   const array = React.Children.toArray(children) as any
-  let sortedChildren;
-  if (array.length==1) {// LIVE
-    sortedChildren = disposition?.filter(({ order, show }) => order && show).map(({ order }) => array[0].props.children[order - 1]) ?? children  
-  }
-  else{ //CMS
-    sortedChildren = disposition?.filter(({ order, show }) => order && show).map(({ order }) => array[order - 1]) ?? children  
-  }
+  const sortedChildren = disposition
+    ?.filter(({ order, show }) => order && show)
+    .map(({ order }) => {
+      if (array.length === 1) {
+        return array[0].props.children[order - 1]
+      }
+
+      return array[order - 1]
+    })
 
   return sortedChildren
 }
