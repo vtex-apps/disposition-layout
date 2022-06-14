@@ -74,6 +74,11 @@ If by mistake you delete an item from the list, in site editor, remember that yo
 
 ![configuration](https://user-images.githubusercontent.com/50715158/128494098-6d5dff5d-c909-48a7-84de-d1578544cf93.png)
 
+## App not working
+
+Some users reported changing the app content via site editor while not seeing them reflected in the storefront.  
+A potential fix was introduced in the `major 2.x`. You can test it by declaring the dependency as such, or installing it directly.
+
 ## Customization
 
 `No CSS Handles are available yet for the app customization.`
