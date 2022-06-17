@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add public folder to be able tu sumbit the app into the appstore.
+
 ## [2.0.0] - 2022-04-28
 
 - Potential fix for storefront's weird children behaviour
