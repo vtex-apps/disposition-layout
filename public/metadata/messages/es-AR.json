@@ -1,0 +1,13 @@
+{
+  "name": "Disposition layout",
+  "headline": "Ordenar y mostrar/ocultar bloques/componentes arrastrándolos en la interfaz del editor del sitio.",
+  "overview": "Un diseño capaz de ordenar las secciones/bloques/componentes arrastrándolos en la interfaz del editor del sitio, y eligiendo cuáles de ellos son visibles.",
+  "features": [
+    "Componentes ordenables como hijos de disposition-layout",
+    "Fácil reordenación de los componentes con la función de arrastrar y soltar"
+  ],
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

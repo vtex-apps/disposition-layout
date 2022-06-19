@@ -1,0 +1,13 @@
+{
+  "name": "Disposition layout",
+  "headline": "Order and show/hide blocks/components by dragging them on the site editor's interface.",
+  "overview": "A layout capable of ordering sections/blocks/components by dragging them on the site editor's interface, and choosing which of them are visible.",
+  "features": [
+    "Orderable components as children of disposition-layout",
+    "Easy reordering components with drag and drop"
+  ],
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

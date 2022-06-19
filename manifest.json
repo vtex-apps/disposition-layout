@@ -11,14 +11,18 @@
     "store": "0.x"
   },
   "dependencies": {},
-  "registries": ["smartcheckout"],
+  "registries": [
+    "smartcheckout"
+  ],
   "policies": [],
   "billingOptions": {
     "support": {
       "url": "https://support.vtex.com/hc/requests"
     },
     "type": "free",
-    "availableCountries": ["*"]
+    "availableCountries": [
+      "*"
+    ]
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
